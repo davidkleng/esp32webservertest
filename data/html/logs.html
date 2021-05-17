@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logs</title>
+    <link rel="stylesheet" href="../css/logs-style.css" />
+    <!-- cambiar por un icono ya que no va a haber internet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  </head>
+  <body>
+      	  <nav>
+		  <div class="topnav" id="myTopnav">
+  <a href="/" class="topnav--item ">Home</a> 
+  <a href="#logs" class="topnav--item active">Logs</a> 
+  <a href="#logss" class="topnav--item" >Logs</a> 
+  <a id="logout" href="#logout" onclick="onLogout()">Cerrar sesión</a>
+  <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	  </nav>
+      <h1>Archivos en la SD</h1>
+    <div>
+      <!-- respuesta protocolo -->
+      <ul id="files--list"></ul>
+      <!-- respuesta protocolo -->
+    </div>
+    <script type="text/javascript" src="../jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/logs.js"></script>
+  </body>
+</html>

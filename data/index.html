@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suricata - Evolution II</title>
+    <link rel="stylesheet" href="./style.css" />
+	<!-- cambiar por un icono ya que no va a haber internet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+	  <nav>
+		  <div class="topnav" id="myTopnav">
+  <a href="#home" class="topnav--item active">Home</a> 
+  <a href="./html/logs.html" class="topnav--item">Logs</a> 
+  <a href="#logss" class="topnav--item" >Logs</a> 
+  <a id="logout" href="#logout" onclick="onLogout()">Cerrar sesión</a>
+  <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	  </nav>
+    <h1>Suricata - Evolution II</h1>
+     
+
+
+    <!-- buttons -->
+    <div class="buttons">
+      <button id="led1">Led 1</button>
+      <button id="led2">Led 2</button>
+      <button id="led3">Led 3</button>
+    </div>
+    <!-- buttons -->
+
+    <!-- slider -->
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="255"
+        value="0"
+        class="slider"
+        id="slider-range"
+      />
+      <p>PWM: <span id="pwm-value"></span></p>
+    </div>
+    <!-- slider -->
+    
+    <!-- gauge -->
+    <h1>Lectura del ADC</h1> 
+
+<div class="gauge">
+  <div class="gauge__body">
+    <div class="gauge__fill"></div>
+    <div class="gauge__cover"></div>
+  </div>
+</div>
+    <!-- gauge -->
+   <!-- Protocolo -->
+    <div class="modbus">
+      <fieldset>
+        <legend>Protocolo MODBUS</legend>
+        <form action="">
+          <label for="id">
+            <div>ID</div>
+            <input type="number" id="id" placeholder="ID" />
+          </label>
+          <label for="address">
+            <div>Dirección</div>
+            <input type="number" id="address" placeholder="Dirección" />
+          </label>
+          
+          <label for="quantity">
+            <div>Cantidad</div>
+            <input type="number" id="quantity" placeholder="Cantidad" />
+          </label>
+		   <input id="leer-modbus" type="submit"  value="Leer registros"/>
+        </form>
+      </div>
+
+            <!-- respuesta protocolo -->
+      <ul id="modbus-list">
+
+</ul>
+      <!-- respuesta protocolo -->
+      </fieldset>
+      
+    <!-- Protocolo -->
+
+	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
