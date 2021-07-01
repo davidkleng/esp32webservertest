@@ -1,8 +1,6 @@
-//const char *ssid = "Suricata";
-//const char *password = "password";
-const char *ssid = "Fibertel WiFi274 2.4GHz";
-const char *password = "0141397192";
-const char *hostname = "suricata";
+const char *ssid = "Timon";
+const char *password = "ypumba";
+const char *hostname = "Timon";
 const char *PARAM_MESSAGE = "message";
 
 IPAddress ip(192, 168, 1, 200);
